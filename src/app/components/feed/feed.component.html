@@ -1,0 +1,30 @@
+<div class="reply-box">
+  <div class="box">
+    <div class="left-area">
+      <img class="user-icon" src="assets/default_profile_400x400.png">
+    </div>
+    <div class="right-area">
+      <div class="upper">
+        <span class="user-name">David Oliveira</span>
+        <span class="user-tag">@DavidOliveira_</span>
+        <span class="user-seperator">·</span>
+        <span class="user-date">Agora</span>
+        <div class="right-corner">
+          <button mat-icon-button (click)="delete()">
+            <mat-icon class="material-icons-outlined more-icon">delete_forever</mat-icon>
+          </button>
+        </div>
+      </div>
+      <div class="lower">
+        {{tweet.text}}
+      </div>
+      <div class="actions">
+        <mat-icon fontIcon="quickreply" class="material-icons-outlined action-icon"></mat-icon>
+        <mat-icon fontIcon="all_inclusive" class="material-icons-outlined action-icon"></mat-icon>
+        <mat-icon fontIcon="favorite_outline" class="action-icon"></mat-icon>
+        <mat-icon fontIcon="upload" class="material-icons-outlined action-icon"></mat-icon>
+        <mat-icon fontIcon="leaderboard" class="material-icons-outlined action-icon"></mat-icon>
+      </div>
+    </div>
+  </div>
+</div>

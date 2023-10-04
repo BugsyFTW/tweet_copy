@@ -1,0 +1,27 @@
+<div class="box">
+  <div class="title">
+    <b>Página Inicial</b>
+  </div>
+  <div class="input-box">
+    <img class="user-icon" src="assets/default_profile_400x400.png">
+    <div class="right">
+      <textarea class="input" placeholder="O que está acontecendo ?" [ngModel]="tweet" (ngModelChange)="onInput($event)" [maxlength]="maxChars"></textarea>
+      <span class="other-answer"><mat-icon fontIcon="public" class="icon-size"></mat-icon> Qualquer pessoal pode responder</span>
+      <hr class="input-seperator">
+      <div class="footer">
+        <mat-icon fontIcon="image" class="material-icons-outlined action-button"></mat-icon>
+        <mat-icon fontIcon="gif_box" class="material-icons-outlined action-button"></mat-icon>
+        <mat-icon fontIcon="leaderboard" class="material-icons-outlined action-button"></mat-icon>
+        <mat-icon fontIcon="sentiment_satisfied" class="material-icons-outlined action-button"></mat-icon>
+        <mat-icon fontIcon="calendar_month" class="material-icons-outlined action-button"></mat-icon>
+        <div class="footer-right">
+          <span *ngIf="tweetCharacters > 0">{{tweetCharacters}}/{{maxChars}}</span>
+          <button (click)="addTweet()" [disabled]="tweetCharacters <= 0" class="tweet-button">Tweetar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-container *ngFor="let tweet of tweets">
+  <app-feed [tweet]="tweet" (onTweetDeleted)="onTweetDelete($event)"></app-feed>
+</ng-container>

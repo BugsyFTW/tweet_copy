@@ -1,0 +1,104 @@
+.box {
+  border: 1px solid #ecececbb;
+  margin: 10px 10px 0px 10px;
+}
+
+.title {
+  border-bottom: 1px solid #ecececbb;
+  padding: 10px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 20px;
+}
+
+.input {
+  padding-top: 20px;
+  display: inline-block;
+  min-height: 50px;
+  border: none;
+  resize: none;
+  font-size: 18px;
+}
+
+.input-seperator {
+  width: 100%;
+  border: 1px solid #ecececbb;
+}
+
+.input:focus {
+  outline-width: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.footer-right {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: auto;
+  gap: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tweet-button {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tweet-button:hover {
+  background-color: rgb(26, 108, 216);
+}
+
+.tweet-button:active {
+  background-color: rgb(23, 124, 192);
+}
+
+.tweet-button:disabled {
+  background-color: #8ECDF7;
+  cursor: default;
+}
+
+.other-answer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #1D9BF0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.icon-size {
+  transform: scale(0.8);
+}
+
+.action-button {
+  color: #8ECDF7;
+}
